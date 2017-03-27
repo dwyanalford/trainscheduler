@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trainscheduler Homework 7</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron" id="header">
+		  <h1>Train Scheduler</h1>
+		  <p>Know exactly when your train will arrive</p>
+		</div>
+		<div class="panel panel-primary">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Current Train Schedule</h3>
+		  </div>
+		  <div class="panel-body">
+		    <table class="table table-striped">
+				<thead>
+				    <th>Train Name</th>
+				    <th>Destination</th> 
+				    <th>Frequency (min)</th>
+				    <th>Next Arrivals</th>
+				    <th>Minutes Away</th>
+				  </thead>
+				<tbody>
+				<!-- dynamically create content here in the javascript file -->
+				</tbody>
+				</table>
+		  </div>
+		</div>
+
+
+		<div class="panel panel-primary">
+		  	<div class="panel-heading">
+		    	<h3 class="panel-title">Add Train Here</h3>
+		  	</div>
+		  	<div class="panel-body">
+		    	<form>
+				  <div class="form-group">
+				    <label for="trainName">Train Name</label>
+				    <input type="text" class="form-control" id="trainName" placeholder="Train Name">
+				  </div>
+				  <div class="form-group">
+				    <label for="destination">Destination</label>
+				    <input type="text" class="form-control" id="destination" placeholder="Destination">
+				  </div>
+				  <div class="form-group">
+				    <label for="FirstTrainTime">First Train Time (ex. HH:MM military time)</label>
+				    <input type="text" class="form-control" id="FirstTrainTime" placeholder="First Train Time ">
+				  </div>
+				  <div class="form-group">
+				    <label for="frequency">Frequency (min)</label>
+				    <input type="text" class="form-control" id="frequency" placeholder="Frequency">
+				  </div>
+				  <button type="submit" class="btn btn-default" id="addTrain">Submit</button>
+				</form>
+	  		</div>
+		</div>
+	</div>
+
+<!-- link to firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+<!-- Link to Moment JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<!-- Link to JQuery -->
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- link to Custom JS file-->
+<script type="text/javascript" src="assets/javascript/train.js"></script>
+</body>
+</html>
